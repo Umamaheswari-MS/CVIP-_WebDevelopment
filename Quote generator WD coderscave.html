@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QUOTE GENERATOR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f053c1;
+}
+.display{
+  width: 650px;
+  padding: 30px 30px 25px;
+  border:5px solid white;
+  border-radius: 20px;
+  margin: 0;
+  background-color: white;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+    
+ .awt{
+ font-size: 22px;
+ font-family: cursive;
+}
+button{
+  background-color: #711968;
+  border: none;
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  font-size: var(.938rem);
+  cursor: pointer;
+  }
+  </style>
+  <script>
+    function generateQuote() {
+      var quotes = [
+        "*Work hard, be kind, and amazing things will happen.*",
+        "*Hard work beats talent when talent doesn't work hard.*",
+        "*Chop your own wood and it will warm you twice.*",
+        "*Work hard in silence, let success be your noise.*",
+        "*Nothing will work unless you do.*",
+        "*The big talent is persistence.*"
+      ];
+      var randomIndex = Math.floor(Math.random() * quotes.length);
+      var quote = quotes[randomIndex];
+      document.getElementById("quote").textContent = quote;
+    }
+  </script>
+</head>
+<body>
+  <div class="display">
+   <div class="awt">
+    <p  id="quote"></p>
+   </div>
+  <div class="but">
+    <button onclick="generateQuote()">GENERATE QUOTE</button>
+  </div>
+  </div>
+</body>
+</html>

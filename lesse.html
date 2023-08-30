@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link rel="stylesheet" href="stdstyle.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" style="background-color:#ff8ab3">
+            <div class="sidebar-header" style="background-color:#ff8ab3">
+                <h3 style="background-color:#ff8ab3">Name of the User</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p></p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" style="background-color:#ff8ab3" >Add</a>
+                    
+                </li>
+                <li>
+                    <a href="#">Dash Board</a>
+                </li>
+                <li>
+                 
+               
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+           
+        </nav>
+
+        <!-- Page Content  -->
+        <div class="container contact-form">
+            
+            <form method="post">
+                <h3>Add Product</h3>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Name of Product *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Price *" value="" />
+                        </div>
+                       
+						<div class="form-group">
+						<form action="/action_page.php">
+                        <input type="file" class="btnContact" id="myFile" name="filename">
+  
+                      </form>
+					  </div>
+					  
+					  <br>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Add" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Discription *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+					
+                </div>
+            </form>
+</div>
+    <!-- Optional JavaScript -->
+      <script>
+      $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+      
+      
+      </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

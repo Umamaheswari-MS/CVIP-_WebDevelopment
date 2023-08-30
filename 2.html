@@ -1,0 +1,210 @@
+<html>
+<head>
+<title>
+SGINUP
+</title>
+</head>
+<style>
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+
+background-color:;
+}
+table{
+	 font-family:Helvetica;
+	position:absolute;
+	left:5%;
+	top:2%;
+	height:70%;
+	width:25%;
+	background-color:white;
+	font-size:30px;
+	color:black;
+
+	background:transparent;
+
+}
+img{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+.textbox{
+	width:100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid black;
+
+}
+.textbox input{
+border: none;
+outline: none;
+background:none;
+}
+.btn{
+width:100%;
+background:none;
+border: 3px solid black;
+color: black;
+padding: 5px;
+font-size:10px;
+
+
+
+}
+
+
+</style>
+<script type="text/javascript">
+
+function fn1(){
+	var str  =document.getElementById("textn").value;
+	var int  =document.getElementById("phone").value;
+	var str1 =document.getElementById("mail").value;	
+	
+	var str3 =document.getElementById("uname").value;
+	var rd1=document.getElementById("rd1");
+	var rd2=document.getElementById("rd2");
+	var str5;
+	var str4=document.getElementById('pass').value;
+
+
+ var date =  document.getElementById('date1').value; 
+              
+            var inpDate = new Date(date); 
+            var currDate = new Date(); 
+              
+            if(currDate.toDateString() == inpDate.toDateString())  
+            
+               alert("Happy brithday");
+            
+         
+
+	if(rd1.checked==true)	
+		str5=rd1;
+	else if(rd2.checked==true)
+		str5=rd2;
+	else
+		alert("Select the ganeder please");
+	
+	
+
+alert("The Name is:" +str +"\n"+ "The Phonenumber: "+int +"\n"+ "The Mail is: "+str1 +"\n"+ "The unsername is: "+str3 +"\n"+ "The gender is:"+str5.value +"\n"+ "The password:"+str4 );
+
+
+if(str5==rd2)
+
+	alert("Happy womens day")
+	
+	}
+</script>
+
+<body>
+
+<img src="img1.jpg">
+
+<form>
+
+
+
+<table>
+	<tr>
+
+	<td>
+		<div class="signup">
+		<h1>SIGN UP</h1>
+		</div>
+		<div class="textbox">
+		<i class="fa fa-smile-o" aria-hidden="true"></i>
+		<input id="textn" type="text" placeholder="Enter the Name" name="">
+		</div>
+	</td>
+	</tr>
+	<tr>
+	<br>
+	<br>
+
+	<td>
+		<div class="textbox">
+		<i class="fa fa-phone" aria-hidden="true"></i>
+		<input id="phone" type="Phone" placeholder="+91980*******" name="+91">
+		</div>
+	</td>
+	</tr>
+	<tr>
+
+	<td>
+		<div class="textbox">
+		<i class="fa fa-envelope" aria-hidden="true"></i>
+		<input id="mail" type="mail" placeholder="Enter the mail" name="">
+		</div>
+	</td>
+	</tr>
+<tr>
+
+	<td>
+		<i class="fa fa-male" aria-hidden="true"></i>
+		<input id="rd1" type="radio"  name="gr1" value="Male">Male
+		<i class="fa fa-female" aria-hidden="true"></i>
+		<input id="rd2" type="radio"  name="gr1" value="Female">Female
+	</td>
+	</tr>
+	<tr>
+
+	<td>
+		<div class="datebox">
+		<i class="fa fa-calendar" aria-hidden="true"></i>
+		   <input id = "date1"
+            placeholder= "mm/dd/yyyy"/>
+		</div>
+	</td>
+	</tr>
+
+	<td>
+		<div class="textbox">
+		<i class="fa fa-user-circle" aria-hidden="true"></i>
+		<input id="uname"type="text" placeholder="Enter the username" name="">
+		</div>
+	</td>
+	</tr>
+	</td>
+	</tr>
+
+	<td>
+		<div class="textbox">
+		<i class="fa fa-lock" aria-hidden="true"></i>
+		<input id="pass"type="password" placeholder="Enter the password" name="">
+		</div>
+
+	</td>
+		<tr>
+	<td>
+
+		<div class="textbox">
+		<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+		<input id="pss" type="password" placeholder="Renter the password" name="">
+		</div>
+	</td>
+	</tr>
+		<tr>
+		<td>
+
+
+
+		<input class="btn" type="button" name="" value="signup" onclick="fn1()">
+		</div>
+
+	</td>
+		</tr>
+
+</table>
+</form>
+
+
+
+</body>
+</html>
